@@ -4,12 +4,11 @@
 #include <gl/GL.h>
 #include <gl/GLU.h>
 
-#include <Vector3.h>
-#include <Matrix3.h>
+#include <Vector.h>
+#include <Matrix.h>
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
 
 class Game
 {
@@ -24,7 +23,12 @@ private:
 	void update();
 	void render();
 	void unload();
-
+	void move();
+	Vector topLeft;
+	Vector topRight;
+	Vector bottomLeft;
+	Vector bottomRight;
+	Matrix mathMatrix;
 	Clock clock;
 	Time elapsed;
 
