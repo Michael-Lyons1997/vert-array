@@ -114,10 +114,10 @@ void Game::update()
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
 	{
-		topLeft = mathMatrix.Rotation(5) * topLeft;
-		bottomLeft = mathMatrix.Rotation(5) * bottomLeft;
-		topRight = mathMatrix.Rotation(5) * topRight;
-		bottomRight = mathMatrix.Rotation(5) * bottomRight;
+		topLeft = mathMatrix.Rotation(1) * topLeft;
+		bottomLeft = mathMatrix.Rotation(1) * bottomLeft;
+		topRight = mathMatrix.Rotation(1) * topRight;
+		bottomRight = mathMatrix.Rotation(1) * bottomRight;
 	}
 	cout << "Update up" << endl;
 }
